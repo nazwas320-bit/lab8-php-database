@@ -1,0 +1,169 @@
+
+/* =================================
+   STYLE WEBSITE DATA BARANG
+================================= */
+
+/* Reset semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tampilan halaman */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    padding: 30px;
+}
+
+/* Judul halaman */
+h1, h2 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+/* Tabel data barang */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Bagian kepala tabel */
+th {
+    background-color: #2563eb;
+    color: white;
+    padding: 16px 12px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Isi tabel */
+td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Warna baris tabel */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Efek ketika mouse diarahkan */
+tbody tr:hover {
+    background-color: #eff6ff;
+}
+
+/* Gambar barang */
+td img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+/* Tombol umum */
+button, .btn {
+    display: inline-block;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 3px;
+}
+
+/* Tombol tambah */
+.btn-tambah {
+    background-color: #16a34a;
+    color: white;
+}
+
+/* Tombol ubah */
+.btn-ubah {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Tombol hapus */
+.btn-hapus {
+    background-color: #dc2626;
+    color: white;
+}
+
+/* Efek tombol */
+button:hover, .btn:hover {
+    opacity: 0.85;
+}
+
+/* Form input */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Label form */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Form pembungkus */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Link */
+a {
+    text-decoration: none;
+}
+
+/* Tampilan layar kecil */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    td img {
+        width: 75px;
+        height: 75px;
+    }
+}
